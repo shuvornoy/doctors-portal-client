@@ -14,6 +14,8 @@ import DisplayError from "../../Pages/Shared/DisplayError/DisplayError";
 import SignUp from "../../Pages/SignUp/SignUp";
 import AdminRoute from "../AdminRoute/AdminRoute";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import About from "../../Pages/About/About";
+import Pdf from "../../Pages/Pdf/Pdf";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/about',
+                element: <About></About>
+            },
+            {
+                path: '/pdf',
+                element: <Pdf></Pdf>
             },
             {
                 path: '/appointment',

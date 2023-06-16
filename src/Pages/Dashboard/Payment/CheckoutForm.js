@@ -122,8 +122,8 @@ const CheckoutForm = ({ booking }) => {
                 <button
                     className='btn btn-sm mt-4 btn-primary'
                     type="submit"
-                    disabled={!stripe || !clientSecret || processing}>
-                    Pay
+                    disabled={!stripe || !clientSecret || processing}
+                >Pay
                 </button>
             </form>
             <p className="text-red-500">{cardError}</p>
