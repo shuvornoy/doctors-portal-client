@@ -1,0 +1,16 @@
+.contact-container{
+    background-image: url('../../../assets/images/contact_form_bg.png');
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: center center;
+    color: #ffffff!important;
+}
+
+.form_container{
+    padding-top: 50px;
+}
+
+.form-group .contact_form_field{
+    height:50px;
+    padding-left: 30px;
+}
