@@ -4,7 +4,6 @@ import Main from "../../Layout/Main";
 import Appointment from "../../Pages/Appointment/Appointment/Appointment";
 import AddDoctor from "../../Pages/Dashboard/AddDoctor/AddDoctor";
 import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers";
-import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
 import ManageDoctors from "../../Pages/Dashboard/ManageDoctors/ManageDoctors";
 import MyAppointment from "../../Pages/Dashboard/MyAppointment/MyAppointment";
 import Payment from "../../Pages/Dashboard/Payment/Payment";
@@ -16,6 +15,8 @@ import AdminRoute from "../AdminRoute/AdminRoute";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import About from "../../Pages/About/About";
 import Pdf from "../../Pages/Pdf/Pdf";
+import Support from "../../Pages/Support/Support";
+
 
 const router = createBrowserRouter([
     {
@@ -34,7 +35,13 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
-            },
+            }
+            ,
+            {
+                path: '/support',
+                element: <PrivateRoute><Support/></PrivateRoute> 
+            }
+            ,
             {
                 path: '/about',
                 element: <About></About>
@@ -46,7 +53,7 @@ const router = createBrowserRouter([
             {
                 path: '/appointment',
                 element: <Appointment></Appointment>
-            }
+            } 
         ]
     },
     {
